@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#C4DA63"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/OrderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:onClick="Order"
+        android:text="Orders"
+        app:backgroundTint="#DC3535" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#1E81A8"
+        app:srcCompat="@mipmap/logomain" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00C4FF">
+
+            <ImageButton
+                android:id="@+id/TopUpBtn"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="5dp"
+                android:onClick="topup"
+                android:scaleType="fitCenter"
+                android:text="TopUp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:srcCompat="@mipmap/creditlogo" />
+
+            <ImageButton
+                android:id="@+id/DrinkBtn"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="5dp"
+                android:onClick="drink"
+                android:scaleType="fitCenter"
+                android:text="Drinks"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:srcCompat="@mipmap/drinkslogo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00C4FF">
+
+            <ImageButton
+                android:id="@+id/FoodBtn"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:onClick="food"
+                android:scaleType="fitCenter"
+                android:text="Foods"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:srcCompat="@mipmap/foodslogo" />
+
+            <ImageButton
+                android:id="@+id/SnacksBtn"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="5dp"
+                android:onClick="snack"
+                android:scaleType="fitCenter"
+                android:text="Snacks"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:srcCompat="@mipmap/snackslogo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
