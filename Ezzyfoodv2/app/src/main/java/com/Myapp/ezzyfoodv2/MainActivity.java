@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.Myapp.ezzyfoodv2.Model.ItemType;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -23,19 +25,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void food(View view) {
         Intent intent = new Intent(this, ItemsActivity.class);
-        intent.putExtra("Type", Type.Food);
+        intent.putExtra("Type", ItemType.Food);
         startActivity(intent);
     }
 
     public void snack(View view) {
         Intent intent = new Intent(this, ItemsActivity.class);
-        intent.putExtra("Type", Type.Snack);
+        intent.putExtra("Type", ItemType.Snack);
         startActivity(intent);
     }
 
     public void drink(View view) {
         Intent intent = new Intent(this, ItemsActivity.class);
-        intent.putExtra("Type", Type.Drink);
+        intent.putExtra("Type", ItemType.Drink);
         startActivity(intent);
     }
 
