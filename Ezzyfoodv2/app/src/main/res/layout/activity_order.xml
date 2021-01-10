@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <Button
+        android:id="@+id/OrdersBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="15dp"
+        android:text="Orders"
+        android:onClick="Order"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="15dp"
+        android:text="Back"
+        android:onClick="Back"/>
+
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="ItemName"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/itemPrice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rp. Price"
+                android:textSize="25dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/QtyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quantity : "
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/qtyInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="3"
+            android:inputType="number"
+            android:hint="No"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/CheckoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Linear1"
+        android:layout_alignRight="@id/Linear1"
+        android:layout_marginTop="75dp"
+        android:text="Add"
+        android:onClick="CheckOut"/>
+
+</RelativeLayout>

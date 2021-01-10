@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity">
+
+    <TextView
+        android:id="@+id/ItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Items"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/OrdersBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="15dp"
+        android:text="Orders"
+        android:onClick="Order"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="15dp"
+        android:text="Back"
+        android:onClick="Back"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ItemsList"
+        android:layout_width="392dp"
+        android:layout_height="486dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:verticalScrollbarPosition="right" />
+</RelativeLayout>

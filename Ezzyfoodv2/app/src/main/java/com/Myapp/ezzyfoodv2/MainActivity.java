@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.Myapp.ezzyfoodv2.Model.ItemType;
+import com.Myapp.ezzyfoodv2.Repository.OrderRepository;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,26 +25,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void food(View view) {
-        Intent intent = new Intent(this, ItemsActivity.class);
+        Intent intent = new Intent(this, ItemActivity.class);
         intent.putExtra("Type", ItemType.Food);
         startActivity(intent);
     }
 
     public void snack(View view) {
-        Intent intent = new Intent(this, ItemsActivity.class);
+        Intent intent = new Intent(this, ItemActivity.class);
         intent.putExtra("Type", ItemType.Snack);
         startActivity(intent);
     }
 
     public void drink(View view) {
-        Intent intent = new Intent(this, ItemsActivity.class);
+        Intent intent = new Intent(this, ItemActivity.class);
         intent.putExtra("Type", ItemType.Drink);
         startActivity(intent);
     }
 
     public void Order(View view) {
         if(OrderRepository.getOrder() != null && !OrderRepository.getOrder().isEmpty()){
-            Intent intent = new Intent(this, OrdersActivity.class);
+            Intent intent = new Intent(this, TransactionActivity.class);
             startActivity(intent);
         }
     }

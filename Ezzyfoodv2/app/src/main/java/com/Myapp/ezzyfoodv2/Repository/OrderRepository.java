@@ -38,7 +38,7 @@ public class OrderRepository {
         return null;
     }
 
-    public static Vector<Order> getOrders(){
+    public static Vector<Order> getOrder(){
         if(orderList==null)return null;
         return orderList;
     }

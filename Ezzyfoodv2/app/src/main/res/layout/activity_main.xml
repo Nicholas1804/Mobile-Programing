@@ -15,10 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginTop="13dp"
+        android:layout_marginEnd="15dp"
         android:onClick="Order"
         android:text="Orders"
-        app:backgroundTint="#DC3535" />
+        app:backgroundTint="#DC3535"
+        android:layout_alignParentRight="true" />
 
     <ImageView
         android:id="@+id/imageView"

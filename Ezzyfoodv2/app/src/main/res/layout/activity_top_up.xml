@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopUpActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Up"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/TopUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="15dp"
+        android:text="TopUp"
+        android:onClick="TopUp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
+
+    <Button
+        android:id="@+id/BackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="15dp"
+        android:text="Back"
+        android:onClick="Back"/>
+
+    <TextView
+        android:id="@+id/balanceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CurrentBalance: "
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/inputLayout"
+        android:layout_alignBottom="@+id/inputLayout"
+        android:layout_marginBottom="75dp"
+        android:layout_alignLeft="@+id/inputLayout" />
+
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Up Amount: "
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="13"
+            android:hint="Amount (Idr >= 10000)"
+            android:inputType="number" />
+    </LinearLayout>
+
+</RelativeLayout>
