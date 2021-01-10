@@ -54,7 +54,7 @@ public class TransactionActivity extends AppCompatActivity {
             if(BalanceRepository.getBalance() > OrderRepository.totalPriceValue()){
                 BalanceRepository.buyItem(OrderRepository.totalPriceValue());
                 OrderRepository.clearOrder();
-                TotalPrice.setText("Thank you for Your Order!\nSee you next time!\nTotal price " + TotalPrice.getText());
+                TotalPrice.setText("Thank you for Your Order!");
                 PayBtn.setText("Home");
             }
         }else if(PayBtn.getText().equals("Home")){

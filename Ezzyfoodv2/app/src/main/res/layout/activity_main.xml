@@ -21,7 +21,8 @@
         android:onClick="Order"
         android:text="Orders"
         app:backgroundTint="#DC3535"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -31,6 +32,20 @@
         android:layout_marginTop="40dp"
         android:background="#1E81A8"
         app:srcCompat="@mipmap/logomain" />
+
+    <Button
+        android:id="@+id/OpenMapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="283dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:onClick="OpenMap"
+        android:text="Open Map"
+        app:backgroundTint="#DC3535" />
 
     <LinearLayout
         android:layout_width="wrap_content"

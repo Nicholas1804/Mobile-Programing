@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C4DA63"
     tools:context=".TopUpActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Top Up"
         android:layout_centerHorizontal="true"
-        android:textSize="25dp"
         android:layout_marginTop="50dp"
-        android:textColor="@color/black"/>
+        android:text="Top Up"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
 
     <Button
         android:id="@+id/TopUpBtn"
@@ -22,48 +23,50 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="15dp"
-        android:text="TopUp"
+        android:layout_marginRight="15dp"
         android:onClick="TopUp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="15dp" />
+        android:text="TopUp"
+        app:backgroundTint="#DC3535" />
 
     <Button
         android:id="@+id/BackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="13dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:onClick="Back"
         android:text="Back"
-        android:onClick="Back"/>
+        app:backgroundTint="#DC3535" />
 
     <TextView
         android:id="@+id/balanceTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CurrentBalance: "
-        android:textSize="20dp"
         android:layout_alignStart="@+id/inputLayout"
+        android:layout_alignLeft="@+id/inputLayout"
         android:layout_alignBottom="@+id/inputLayout"
         android:layout_marginBottom="75dp"
-        android:layout_alignLeft="@+id/inputLayout" />
+        android:text="CurrentBalance: "
+        android:textSize="20dp" />
 
     <LinearLayout
         android:id="@+id/inputLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_centerInParent="true"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Top Up Amount: "
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
 
         <EditText
             android:id="@+id/editTextTextPersonName"

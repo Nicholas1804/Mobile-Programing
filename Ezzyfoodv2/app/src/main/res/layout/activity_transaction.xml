@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C4DA63"
     tools:context=".TransactionActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Orders"
         android:layout_centerHorizontal="true"
-        android:textSize="25dp"
         android:layout_marginTop="50dp"
-        android:textColor="@color/black"/>
+        android:text="Your Orders"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
 
     <TextView
         android:id="@+id/TotalPriceTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Price:"
-        android:textSize="20dp"
         android:layout_alignBottom="@id/OrdersList"
-        android:layout_marginBottom="325dp"
         android:layout_marginLeft="10dp"
-        android:textColor="@color/black"/>
+        android:layout_marginBottom="534dp"
+        android:text="Total Price:"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <Button
         android:id="@+id/PayBtn"
@@ -33,30 +34,32 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="13dp"
         android:layout_marginEnd="15dp"
-        android:text="PayNow"
+        android:layout_marginRight="15dp"
         android:onClick="Pay"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="15dp" />
+        android:text="PayNow"
+        app:backgroundTint="#DC3535" />
 
     <Button
         android:id="@+id/BackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="13dp"
         android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:onClick="Back"
         android:text="Back"
-        android:onClick="Back"/>
+        app:backgroundTint="#DC3535" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/OrdersList"
-        android:layout_width="match_parent"
-        android:layout_height="325dp"
+        android:layout_width="379dp"
+        android:layout_height="490dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
         android:layout_marginHorizontal="10dp"
-        android:verticalScrollbarPosition="right"
-        android:textColor="@color/black"/>
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:verticalScrollbarPosition="right" />
 </RelativeLayout>
